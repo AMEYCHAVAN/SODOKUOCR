@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    >
+     <!-- 定义一个SurfaceView是摄像头的预览区域 -->
+ 	<SurfaceView
+     android:id="@+id/mySurfaceView"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:layout_weight="1"/>
+	 <LinearLayout
+	      android:orientation="horizontal"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content" >
+     <Button
+            android:id="@+id/conform_take_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/conform_take_picture"/>
+      <Button
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/exit"/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main"
+    android:orientation="vertical" ><!-- 
+ 
+    <Button
+        android:id="@+id/puzzle_library"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="84dp"
+        android:layout_y="302dp"
+        android:background="@drawable/puzzlelibrary_set" 
+        android:visibility="gone"/> -->
+ 
+    <Button
+        android:id="@+id/camInput"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="30dp"
+        android:layout_y="180dp"
+        android:background="@drawable/caminput_set" 
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/galleryInput"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="120dp"
+        android:layout_y="120dp"
+        android:background="@drawable/galleryinput_set" 
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/handInput"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="210dp"
+        android:layout_y="180dp"
+        android:background="@drawable/handinput_set"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="120dp"
+        android:layout_y="240dp"
+        android:background="@drawable/about_set"
+        android:visibility="gone" />
+
+</AbsoluteLayout>

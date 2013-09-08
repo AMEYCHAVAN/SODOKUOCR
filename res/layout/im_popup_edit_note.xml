@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal" >
+
+    <ToggleButton
+        android:id="@+id/button_1"
+        style="@style/im_popup_note_number_button"
+        android:textOff="1"
+        android:textOn="1" />
+
+    <ToggleButton
+        android:id="@+id/button_2"
+        style="@style/im_popup_note_number_button"
+        android:layout_toRightOf="@+id/button_1"
+        android:textOff="2"
+        android:textOn="2" />
+
+    <ToggleButton
+        android:id="@+id/button_3"
+        style="@style/im_popup_note_number_button"
+        android:layout_toRightOf="@+id/button_2"
+        android:textOff="3"
+        android:textOn="3" />
+
+    <ToggleButton
+        android:id="@+id/button_4"
+        style="@style/im_popup_note_number_button"
+        android:layout_below="@+id/button_1"
+        android:textOff="4"
+        android:textOn="4" />
+
+    <ToggleButton
+        android:id="@+id/button_5"
+        style="@style/im_popup_note_number_button"
+        android:layout_below="@+id/button_1"
+        android:layout_toRightOf="@+id/button_4"
+        android:textOff="5"
+        android:textOn="5" />
+
+    <ToggleButton
+        android:id="@+id/button_6"
+        style="@style/im_popup_note_number_button"
+        android:layout_below="@+id/button_1"
+        android:layout_toRightOf="@+id/button_5"
+        android:textOff="6"
+        android:textOn="6" />
+
+    <ToggleButton
+        android:id="@+id/button_7"
+        style="@style/im_popup_note_number_button"
+        android:layout_below="@+id/button_4"
+        android:textOff="7"
+        android:textOn="7" />
+
+    <ToggleButton
+        android:id="@+id/button_8"
+        style="@style/im_popup_note_number_button"
+        android:layout_below="@+id/button_4"
+        android:layout_toRightOf="@+id/button_7"
+        android:textOff="8"
+        android:textOn="8" />
+
+    <ToggleButton
+        android:id="@+id/button_9"
+        style="@style/im_popup_note_number_button"
+        android:layout_below="@+id/button_4"
+        android:layout_toRightOf="@+id/button_8"
+        android:textOff="9"
+        android:textOn="9" />
+
+    <Button
+        android:id="@+id/button_close"
+        style="@style/im_popup_close_button"
+        android:layout_below="@+id/button_7"
+        android:text="@string/close" />
+
+    <Button
+        android:id="@+id/button_clear"
+        style="@style/im_popup_clear_button"
+        android:layout_alignBottom="@+id/button_close"
+        android:layout_toRightOf="@+id/button_close"
+        android:text="@string/clear" />
+
+</RelativeLayout>

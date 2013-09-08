@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sudokuhelper"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <application android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme">
+		<activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SudokuPlayerActivity"
+                  android:label="@string/puzzle_title"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".HandInputActivity"
+                  android:label="@string/handInput"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/MyTheme.NoTitleBar.CustomBackground">
+        </activity>
+        <activity android:name=".GalleryInputActivity"
+                  android:label="@string/galleryInput"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/MyTheme.NoTitleBar.CustomBackground">
+        </activity>
+        <activity android:name=".CamInputActivity"
+                  android:label="@string/camInput"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SudokuListActivity"
+                  android:label="@string/sudoku_list"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/MyTheme.NoTitleBar.CustomBackground">
+        </activity>
+        <activity android:name=".GalleryActivity"
+                  android:label="@string/gallery_template"
+                  android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

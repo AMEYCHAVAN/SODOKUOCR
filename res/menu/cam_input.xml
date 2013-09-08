@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--  设置菜单，保留以后改进
+    <item android:id="@+id/menu_settings"
+        android:title="@string/menu_settings"
+        android:icon="@drawable/about"/>
+    -->
+    <item android:id="@+id/select_picture"
+        android:title="@string/select_picture"
+        android:icon="@drawable/galleryinput"/>
+     <item android:id="@+id/select_template"
+        android:title="@string/select_template"
+        android:icon="@drawable/puzzlelibrary"/>
+    <item android:id="@+id/take_picture"
+        android:title="@string/take_picture"
+        android:icon="@drawable/caminput"/>
+</menu>

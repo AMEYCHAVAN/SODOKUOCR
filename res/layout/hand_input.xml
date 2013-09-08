@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/handinput_bk" >
+
+    <LinearLayout
+        android:id="@+id/hand_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop = "40dp"
+        >
+
+        <com.sudokuhelper.SudokuBoardView
+            android:id="@+id/sudoku_board"
+            android:layout_width="match_parent"
+            android:layout_height="291dp"
+            android:keepScreenOn="true" />
+
+        <RelativeLayout  android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+     
+            
+ <!--            
+            <Button android:id="@+id/save"
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="38dp"
+	        android:background="@drawable/save"/>
+         
+         
+          -->
+         
+        	<Button android:id="@+id/solve"
+		    android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="38dp"
+	        android:background="@drawable/solve"/>
+      	 </RelativeLayout>
+        
+        <com.sudokuhelper.inputmethod.IMControlPanel
+            android:id="@+id/input_methods"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        
+    </LinearLayout>
+</RelativeLayout>
